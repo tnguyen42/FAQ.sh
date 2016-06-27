@@ -1,17 +1,26 @@
-# The Useless Web
-Take me to another useless website please. The useless web is a single button, which opens new links to an array of strange and odd websites. Its live [here](http://www.theuselessweb.com).
+# FAQ.sh
+
+###Introduction
+FAQ.sh is an open source project which generates random frequently asked questions about React JS, React Native and Redux. You can discover it [here](http://faq.sh/).
 
 ### Contributions
-Feel free to open a pull request adding your website or removing something thats down.
+Feel free to make a pull request if you want to contribute by correcting a few questions or answer or by adding yours.
+You can also open an issue in order to ask a question you may not have the answer to.
 
-Sadly, I'm not really too active on this any more, and feel that the useless web has a great balance of sites already. Over the past couple of years a lot of sites have come and gone, some couldn't handle the server load, and were excluded (since it dilutes the overall experience).
+You can also make a pull request to improve the styling, but please make sure everything is still responsive.
 
-I'm also not including websites that have advertising, or any real ulterior motives outside of being totally useless.
+### Project architecture
+The project is exclusively front-end.
+index.html displays the styling of the only page. Questions and answers are fetched from a table in js/fetchQuestion.js
 
-### Screenshot.
-![Nothing Special, but here it is.](http://i.imgur.com/k0yMsQ6.png "Home")
+### Q/A adding Guidelines
+When you add new questions, remember a few things:
+- Every question must be independent. Read each of your question independently before submitting them
+- This site is mainly addressed to beginners in React. So please avoid too advanced questions
+- FAQ.sh aims to be easy to read, from anywhere. Avoid technical details in order to keep it this way
+- It is responsive, but the space is still limited. Please check that your questions and answers fit
 
 ### License
-The Useless Web is covered by the MIT License.
+FAQ.sh is covered by the MIT Licence.
 
-Copyright (C) 2015 ~ [Tim Holman](http://tholman.com) ~ timothy.w.holman@gmail.com
+Copyright (c) 2016 ~ Thanh-Quy Nguyen ~ nguyen.tq@hotmail.fr
