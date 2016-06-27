@@ -3,6 +3,8 @@
 ###Introduction
 FAQ.sh is an open source project which generates random frequently asked questions about React JS, React Native and Redux. You can discover it [here](http://faq.sh/).
 
+![Screenshot](https://github.com/tnguyen42/tnguyen42.github.io/blob/master/FAQ/faq.png)
+
 ### Contributions
 Feel free to make a pull request if you want to contribute by correcting a few questions or answer or by adding yours.
 You can also open an issue in order to ask a question you may not have the answer to.
