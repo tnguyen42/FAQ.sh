@@ -13,6 +13,7 @@ You can also make a pull request to improve the styling, but please make sure ev
 
 ### Project architecture
 The project is exclusively front-end.
+
 index.html displays the styling of the only page. Questions and answers are fetched from a table in js/fetchQuestion.js
 
 ### Q/A adding Guidelines
