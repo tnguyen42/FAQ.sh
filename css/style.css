@@ -60,6 +60,7 @@ h3 {
 	margin-top: 15px;
 	font-size: 12px;
 	text-align: left;
+	line-height: 18px;
 }
 
 a {
@@ -216,6 +217,7 @@ button:active {
 		margin-top: 15px;
 		font-size: 10px;
 		text-align: left;
+		line-height: 14px;
 	}
 
 	button {
@@ -258,6 +260,10 @@ button:active {
 
 	h1 {
 		font-size: 20px;
+	}
+
+	h3 {
+		line-height: 12px;
 	}
 
 	hgroup {

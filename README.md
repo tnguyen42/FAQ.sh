@@ -20,7 +20,7 @@ index.html displays the styling of the only page. Questions and answers are fetc
 When you add new questions, remember a few things:
 - Every question must be independent. Read each of your question independently before submitting them
 - This site is mainly addressed to beginners in React. So please avoid too advanced questions
-- FAQ.sh aims to be easy to read, from anywhere. Avoid technical details in order to keep it this way
+- FAQ.sh aims to be easy to read, from any device. Avoid technical details in order to keep it this way
 - It is responsive, but the space is still limited. Please check that your questions and answers fit
 
 ### License
