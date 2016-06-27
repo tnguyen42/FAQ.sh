@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<title> React & Redux FAQ </title>
+
+		<!-- META -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Random React and Redux FAQ">
+
+		<meta property="og:url"					content="http://www.faq.sh/" />
+		<meta property="og:type"				content="website" />
+		<meta property="og:title"				content="Random FAQ for React, React Native and Redux" />
+		<meta property="og:site_name"	content="FAQ.sh" />
+		<meta property="og:description"			content="Open source contributive FAQ for React beginners" />
+		<meta property="og:image"				content="http://faq.sh/images/fbmeta.png" />
+		<meta property="fb:app_id"				content="1024917144251080" />
+
+		<!-- CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+
+		<!-- JS -->
+		<script type="text/javascript" src="js/fetchQuestion.js?v=1"></script>
+		<script type="text/javascript" src="js/libs/utils.js"></script>
+
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</head>
+	<body>
+
+
+		<hgroup>
+			<hgroup class="QandA">
+				<h1 id="question">Navigator, NavigatorIOS or Navigation Experimental in RN?</h1>
+				<hr />
+				<h2 id="answer">Navigator is the current common choice. However, Facebook is dropping support for it and focusing on Navigation Experimental which includes the Redux logic which is commonly admitted as best practice today. You could still use NavigatorIOS since it is a native component, but you won't be able to personalize it.</h2>
+				<h3>Source: <a id="source" target="_blank" href="https://github.com/ericvicenti/navigation-rfc/blob/master/Docs/NavigationOverview.md">Navigator Comparison</a></h3>
+			</hgroup>
+
+			<hgroup class="nextButton">
+				<h5><button id='button'>NEXT</button></h5>
+				<script>
+					var fetQuestion = new fetchQuestion(document.getElementById('button'));
+				</script>
+			</hgroup>
+		</hgroup>
+
+ 		<div class='header'>
+	 		<div>
+	 			<!-- Header -->
+	 			<span class='text'>
+					<a class="github-button" href="https://github.com/tnguyen42/faq" data-icon="octicon-star" data-style="mega" data-count-href="/tnguyen42/faq/stargazers" data-count-api="/repos/tnguyen42/faq#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tnguyen42/faq on GitHub">Star</a>
+
+					<a class="github-button" href="https://github.com/tnguyen42/faq/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/tnguyen42/faq/network" data-count-api="/repos/tnguyen42/faq#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tnguyen42/faq on GitHub">Fork</a>
+	 			</span>
+
+	 			<span class='logoContainer'>
+
+					<a class='logo'>FAQ</a>
+
+				</span>
+			</div>
+		</div>
+	</body>
+</html>
