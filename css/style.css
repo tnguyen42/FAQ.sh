@@ -56,11 +56,26 @@ h2 {
 	font-size: 20px;
 }
 
-h3 {
+#source {
+	margin: auto;
+	color: #ccc;
 	margin-top: 15px;
 	font-size: 12px;
 	text-align: left;
 	line-height: 18px;
+	margin-bottom: 5px;
+}
+
+#sourceLink {
+	color: #ccc;
+	margin-top: 15px;
+	font-size: 12px;
+	text-align: left;
+	line-height: 18px;
+}
+
+.inline {
+	display: inline-block;
 }
 
 a {
