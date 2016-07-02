@@ -5,13 +5,15 @@ function fetchQuestion( button ) {
 
 	var randomRange = 6;
 
-	// List of the questions and answers ; [Question ; Answer ; Source]
-	// Source is optional
+	// List of the questions and answers ; [Question ; Answer ; Source link ; Source text]
+	// Source link is optional
+	// Source text is optional
 
 	var questionList = [
 		['Navigator, NavigatorIOS or Navigation Experimental in RN?',
 		'Navigator is the current common choice. However, Facebook is dropping support for it and focusing on Navigation Experimental which includes the Redux logic which is commonly admitted as best practice today. You could still use NavigatorIOS since it is a native component, but you won\'t be able to personalize it.',
-		'https://github.com/ericvicenti/navigation-rfc/blob/master/Docs/NavigationOverview.md'],
+		'https://github.com/ericvicenti/navigation-rfc/blob/master/Docs/NavigationOverview.md',
+		'Navigation Comparison'],
 		['Question 2', 'Answer 2', ''],
 		['Question 3', 'Answer 3'],
 		['Question 4', 'Answer 4', 'Source 4'],
@@ -24,7 +26,7 @@ function fetchQuestion( button ) {
 	var questions = null;
 
 	// Prepares and binds the button
-	var init = function() {
+		var init = function() {
 
 		button.onclick = onButtonClick;
 
@@ -48,7 +50,10 @@ function fetchQuestion( button ) {
 			document.getElementById('sourceLink').innerHTML = '';
 		} else {
 			document.getElementById('source').innerHTML = 'Source: ';
-			document.getElementById('sourceLink').innerHTML = question[2];
+			if (question[3] == null || question[3] == '' || question[3] == undefined)
+				document.getElementById('sourceLink').innerHTML = question[2];
+			else
+				document.getElementById('sourceLink').innerHTML = question[3];
 			document.getElementById('sourceLink').setAttribute('href', question[2]);
 		}
 	};
@@ -83,7 +88,10 @@ function fetchQuestion( button ) {
 			document.getElementById('sourceLink').innerHTML = '';
 		} else {
 			document.getElementById('source').innerHTML = 'Source: ';
-			document.getElementById('sourceLink').innerHTML = question[2];
+			if (question[3] == null || question[3] == '' || question[3] == undefined)
+				document.getElementById('sourceLink').innerHTML = question[2];
+			else
+				document.getElementById('sourceLink').innerHTML = question[3];
 			document.getElementById('sourceLink').setAttribute('href', question[2]);
 		}
 	};
