@@ -5,7 +5,8 @@ function fetchQuestion( button ) {
 
 	var randomRange = 6;
 
-	// List of the questions and answers ; don't forget the source
+	// List of the questions and answers ; [Question ; Answer ; Source]
+	// Source is optional
 
 	var questionList = [
 		['Navigator, NavigatorIOS or Navigation Experimental in RN?',
