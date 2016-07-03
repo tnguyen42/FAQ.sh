@@ -98,7 +98,7 @@ function fetchQuestion( button ) {
 		'http://redux.js.org/',
 		'redux.js.org'],
 		['What are actions and reducers?',
-		'Actions and reducers are Redux notions. Actions are payloads of information that describe “what happens” and reducers update the state according to those actions',
+		'Actions and reducers are Redux notions. Actions are payloads of information that describe "what happens" and reducers update the state according to those actions',
 		'http://redux.js.org/docs/basics/Store.html',
 		'Store in Redux'],
 		['What are mapStateToProps and mapDispatchToProps?',
