@@ -35,6 +35,15 @@
 		<script type="text/javascript" src="js/libs/utils.js"></script>
 
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<!-- Mixpanel -->
+		<script type="text/javascript">
+			(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+			for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+			mixpanel.init("8a8dca9966063dc6de99fe131333dae5");
+		</script>
+		<!-- end Mixpanel -->
+
 	</head>
 	<body>
 
@@ -48,27 +57,33 @@
 			</hgroup>
 
 			<hgroup class="nextButton">
-				<h5><button id='button'>NEXT</button></h5>
+				<h5><button id='button' onclick='mixpanel.track("Next click")''>NEXT</button></h5>
 				<script>
-					var fetQuestion = new fetchQuestion(document.getElementById('button'));
+					var next = new fetchQuestion(document.getElementById('button'));
 				</script>
 			</hgroup>
 		</hgroup>
 
- 		<div class='header'>
-	 		<div>
-	 			<!-- Header -->
-	 			<span class='text'>
-					<a class="github-button" href="https://github.com/tnguyen42/faq" data-icon="octicon-star" data-style="mega" data-count-href="/tnguyen42/faq/stargazers" data-count-api="/repos/tnguyen42/faq#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tnguyen42/faq on GitHub">Star</a>
+		<div class='header'>
+			<div>
+				<!-- Header -->
+				<span class='text'>
+					<a id="star" class="github-button" href="https://github.com/tnguyen42/FAQ.sh" data-icon="octicon-star" data-style="mega" data-count-href="/tnguyen42/FAQ.sh/stargazers" data-count-api="/repos/tnguyen42/FAQ.sh#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tnguyen42/FAQ.sh on GitHub">Star</a>
 
-					<a class="github-button" href="https://github.com/tnguyen42/faq/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/tnguyen42/faq/network" data-count-api="/repos/tnguyen42/faq#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tnguyen42/faq on GitHub">Fork</a>
+					<a id="fork" class="github-button" href="https://github.com/tnguyen42/FAQ.sh/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/tnguyen42/FAQ.sh/network" data-count-api="/repos/tnguyen42/FAQ.sh#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tnguyen42/FAQ.sh on GitHub">Fork</a>
 	 			</span>
 
 	 			<span class='logoContainer'>
-
 					<a class='logo'>FAQ</a>
-
 				</span>
+
+				<script type="text/javascript">
+					var star = document.getElementById('star');
+					var fork = document.getElementById('fork');
+					
+					star.addEventListener("click", mixpanel.track("Star Click"), false);
+					fork.addEventListener("click", mixpanel.track("Fork Click"), false);
+				</script>
 			</div>
 		</div>
 	</body>
