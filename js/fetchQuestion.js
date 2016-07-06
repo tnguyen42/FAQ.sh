@@ -87,8 +87,8 @@ function fetchQuestion( button ) {
 
 		['Who is in charge of the development of Redux?',
 		'Redux was originally developed by Dan Abramov, who was since hired at Facebook',
-		'http://redux.js.org/',
-		'redux.js.org'],
+		'https://twitter.com/dan_abramov/status/671135846830075904',
+		'Dan Abramov tweet'],
 		['What is Flux?',
 		'Flux is a logic architecture to handle the data flow of your app and any state in it. It eases the way you can get your data shared between several components',
 		'',
