@@ -187,6 +187,7 @@ function fetchQuestion( button ) {
 			document.getElementById('sourceLink').setAttribute('href', question[2]);
 		}
 		mixpanel.track("Next Click");
+		mixpanel.people.increment("Next Clicks", 1);
 	};
 
 	// Save the current list of questions for the new user.
