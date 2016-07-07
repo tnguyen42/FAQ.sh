@@ -10,8 +10,9 @@ if (supportsHtmlStorage() === true) {
 		localStorage.FAQuid = id;
 		mixpanel.identify(id);
 		mixpanel.people.set({
-			$created: moment().format(),
-			$last_login: moment().format()
+			$created: moment().format('MMMM Do YYYY'),
+			$last_login: moment().format('MMMM Do YYYY'),
+			next_clicks: 0
 		});
 	}
 }
