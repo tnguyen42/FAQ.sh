@@ -81,11 +81,19 @@
 				</span>
 
 				<script type="text/javascript">
-					var star = document.getElementById('star');
-					var fork = document.getElementById('fork');
+					var star = document.getElementById("star");
+					var fork = document.getElementById("fork");
 					
-					star.addEventListener("click", function(){mixpanel.track("Star Click")}, false);
-					fork.addEventListener("click", function(){mixpanel.track("Fork Click")}, false);
+					function starClick() {
+						mixpanel.track("Star Click");
+					}
+
+					function forkClick() {
+						mixpanel.track("Fork Click");
+					}
+
+					star.addEventListener("click", starClick, false);
+					fork.addEventListener("click", forkClick, false);
 				</script>
 			</div>
 		</div>
