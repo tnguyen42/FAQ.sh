@@ -118,7 +118,7 @@ function fetchQuestion( button ) {
 	var questions = null;
 
 	// Prepares and binds the button
-		var init = function() {
+	var init = function() {
 
 		button.onclick = onButtonClick;
 
