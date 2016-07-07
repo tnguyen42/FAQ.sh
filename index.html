@@ -84,8 +84,8 @@
 					var star = document.getElementById('star');
 					var fork = document.getElementById('fork');
 					
-					star.addEventListener("click", mixpanel.track("Star Click"), false);
-					fork.addEventListener("click", mixpanel.track("Fork Click"), false);
+					star.addEventListener("click", function(){mixpanel.track("Star Click")}, false);
+					fork.addEventListener("click", function(){mixpanel.track("Fork Click")}, false);
 				</script>
 			</div>
 		</div>
