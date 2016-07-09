@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Random React and Redux FAQ">
 		<link rel="shortcut icon" type="image/png" href="images/favicon2.png"/>
+		<meta name="theme-color" content="#FF1177" />
+		<link rel="icon" href="images/icon.png" />
 
 		<!-- Fb META -->
 		<meta property="og:url"					content="http://www.faq.sh/" />
@@ -26,16 +28,18 @@
 		<meta name="twitter:image:alt" content="FAQ logo" />
 
 		<!-- CSS -->
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css' />
 
 		<!-- JS -->
 		<script type="text/javascript" src="js/fetchQuestion.js?v=1"></script>
 		<script type="text/javascript" src="js/libs/utils.js"></script>
 
+		<!-- GitHub buttons -->
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
 
+		<!-- Moment JS -->
 		<script type="text/javascript" src="http://momentjs.com/downloads/moment.js"></script>
 
 		<!-- Mixpanel -->
@@ -70,7 +74,7 @@
 		<div class='header'>
 			<div>
 				<!-- Header -->
-				<span class='text'>
+				<span id="superID" class='text'>
 					<a id="star" class="github-button" href="https://github.com/tnguyen42/FAQ.sh" data-icon="octicon-star" data-style="mega" data-count-href="/tnguyen42/FAQ.sh/stargazers" data-count-api="/repos/tnguyen42/FAQ.sh#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tnguyen42/FAQ.sh on GitHub">Star</a>
 
 					<a id="fork" class="github-button" href="https://github.com/tnguyen42/FAQ.sh/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/tnguyen42/FAQ.sh/network" data-count-api="/repos/tnguyen42/FAQ.sh#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tnguyen42/FAQ.sh on GitHub">Fork</a>
@@ -83,13 +87,18 @@
 				<script type="text/javascript">
 					var star = document.getElementById("star");
 					var fork = document.getElementById("fork");
-					
+					var superID = document.getElementById("superID");
+
+					console.log(superID);
+
 					function starClick() {
-						mixpanel.track("Star Click");
+						mixpanel.track('Star Click');
+						console.log("Star Click BITCH");
 					}
 
 					function forkClick() {
-						mixpanel.track("Fork Click");
+						mixpanel.track('Fork Click');
+						console.log("BITCHY Fork Click");
 					}
 
 					star.addEventListener("click", starClick, false);
