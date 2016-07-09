@@ -47,8 +47,8 @@ function fetchQuestion( button ) {
 		'React Native GitHub'],
 		['Is React Native stable?',
 		'There is a minor update of React Native approximatively every 2 weeks. However, none of them should break your app',
-		'',
-		''],
+		'https://facebook.github.io/react-native/versions.html',
+		'React Native Versions'],
 		['How to create animations in React Native?',
 		'There is a library dedicated to it called Animated',
 		'https://facebook.github.io/react-native/docs/animations.html',
@@ -78,9 +78,13 @@ function fetchQuestion( button ) {
 		'',
 		''],
 		['Are there any best practices for React Native? Where to find them?',
-		'The best pratices are still in dispute. The closest to them would be the official F8 sample app you can find on GitHub',
-		'https://github.com/fbsamples/f8app',
-		'F8 on GitHub'],
+		'The best pratices are still in dispute. The closest to them would be the official F8 sample app you can find on GitHub. Also, Facebook wrote a little guide about it at makeitopen.com',
+		'http://makeitopen.com/',
+		'makeitopen.com'],
+		['Where can I find already developped with React Native?',
+		'There\'s a showcase on the official React Native repo. You can find it in the source',
+		'http://facebook.github.io/react-native/showcase.html',
+		'React Native Showcase'],
 
 	// Redux relative question
 	// -----------------------

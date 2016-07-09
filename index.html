@@ -71,6 +71,8 @@
 			<hgroup class="nextButton">
 				<h5><button id='button'>NEXT</button></h5>
 				<script>
+					mixpanel.track('Page View');
+					console.log('Page View');
 					var next = new fetchQuestion(document.getElementById('button'));
 				</script>
 			</hgroup>
@@ -79,7 +81,7 @@
 		<div class='header'>
 			<div>
 				<!-- Header -->
-				<span id="superID" class='text'>
+				<span class='text'>
 					<a id="star" class="github-button" href="https://github.com/tnguyen42/FAQ.sh" data-icon="octicon-star" data-style="mega" data-count-href="/tnguyen42/FAQ.sh/stargazers" data-count-api="/repos/tnguyen42/FAQ.sh#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star tnguyen42/FAQ.sh on GitHub">Star</a>
 
 					<a id="fork" class="github-button" href="https://github.com/tnguyen42/FAQ.sh/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/tnguyen42/FAQ.sh/network" data-count-api="/repos/tnguyen42/FAQ.sh#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork tnguyen42/FAQ.sh on GitHub">Fork</a>
@@ -92,9 +94,6 @@
 				<script type="text/javascript">
 					var star = document.getElementById("star");
 					var fork = document.getElementById("fork");
-					var superID = document.getElementById("superID");
-
-					console.log(superID);
 
 					function starClick() {
 						mixpanel.track('Star Click');
