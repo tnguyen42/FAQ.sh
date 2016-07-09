@@ -110,7 +110,7 @@ function fetchQuestion( button ) {
 		'',
 		''],
 		['Is Redux or any other implementation of Flux required when working with React?',
-		'Flux is not required but highly recommended if you do not want to avoid struggling with states and props being inherited in a messy project',
+		'Flux is not required but highly recommended if you want to avoid struggling with states and props being inherited in a messy project',
 		'',
 		''],
 		// ['Question 8',
