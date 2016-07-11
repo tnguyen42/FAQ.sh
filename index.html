@@ -90,18 +90,21 @@
 					<a class='logo'>FAQ</a>
 				</span>
 
+<!-- There are still some trouble tracking clicks on Star and Fork due to xdomain iframes -->
+<!-- https://github.com/ntkme/github-buttons/issues/21 -->
+
 				<script type="text/javascript">
 					var star = document.getElementById("star");
 					var fork = document.getElementById("fork");
 
 					function starClick() {
 						mixpanel.track('Star Click');
-						console.log("Star Click BITCH");
+						console.log("Star Click");
 					}
 
 					function forkClick() {
 						mixpanel.track('Fork Click');
-						console.log("BITCHY Fork Click");
+						console.log("Fork Click");
 					}
 
 					star.addEventListener("click", starClick, false);
